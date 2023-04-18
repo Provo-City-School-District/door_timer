@@ -1,0 +1,28 @@
+{
+  "doors": [
+    {
+      "name": "West Door",
+      "port": 17
+    },
+    {
+      "name": "South Roll Up Door",
+      "port": 27
+    },
+    {
+      "name": "South Man Door",
+      "port": 22
+    },
+    {
+      "name": "East Door",
+      "port": 23
+    },
+    {
+      "name": "North East Door",
+      "port": 24
+    },
+    {
+      "name": "North Door",
+      "port": 25
+    }
+  ]
+}
