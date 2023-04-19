@@ -1,14 +1,16 @@
 mkdir door_timer
 
-wget https://github.com/Provo-City-School-District/DoorTimer/raw/main/config.json
-wget https://github.com/Provo-City-School-District/DoorTimer/raw/main/door_logger.py
-wget https://github.com/Provo-City-School-District/DoorTimer/raw/main/door_parser.py
+cd door_timer
+
+curl -L -o config.json https://github.com/Provo-City-School-District/DoorTimer/raw/main/config.json
+curl -L -o door_logger.py https://github.com/Provo-City-School-District/DoorTimer/raw/main/door_logger.py
+curl -L -o door_parser.py https://github.com/Provo-City-School-District/DoorTimer/raw/main/door_parser.py
 
 mkdir lib
 cd lib
 
-wget https://github.com/Provo-City-School-District/DoorTimer/raw/main/lib/date.py
-wget https://github.com/Provo-City-School-District/DoorTimer/raw/main/lib/gpio_loader.py
+curl -L -o date.py https://github.com/Provo-City-School-District/DoorTimer/raw/main/lib/date.py
+curl -L -o gpio_loader.py https://github.com/Provo-City-School-District/DoorTimer/raw/main/lib/gpio_loader.py
 
 cd ..
 
