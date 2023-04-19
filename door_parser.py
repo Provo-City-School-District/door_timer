@@ -39,7 +39,7 @@ for line in file.readlines():
 context = ssl.create_default_context()
 
 # This is where we'd send the message.
-with smtplib.SMTP_SSL("smtp.provo.edu", 25, context=context) as server:
+with smtplib.SMTP("smtp.provo.edu", 25) as server:
     for door in door_data:
         send_string = f"{door}"
         for open_data in door_data[door]:
@@ -47,15 +47,12 @@ with smtplib.SMTP_SSL("smtp.provo.edu", 25, context=context) as server:
 
         print(send_string)
 
-        # TODO: Change this to run send the correct message to the system.
-        message = MIMEMultipart("alternative")
-        message["Subject"] = door
+        message = """From: Do Not Reply <donotreply@provo.edu>
+        To: Admin <brightonc@provo.edu>
+        Subject: Door Report
+        """ + send_string
 
-        message_string = MIMEText(send_string, "plain")
-
-        message.attach(message_string)
-
-        server.sendmail("donotreply@provo.edu", "brightonc@provo.edu", message.as_string())
+        server.sendmail("donotreply@provo.edu", ["brightonc@provo.edu"], message)
 
 
 # Clear and close the log file.
