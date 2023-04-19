@@ -1,4 +1,8 @@
 {
+  "recipients": [
+    "brightonc@provo.edu",
+    "joshe@provo.edu"
+  ],
   "doors": [
     {
       "name": "West Door",

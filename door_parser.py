@@ -1,6 +1,8 @@
 from datetime import datetime
 
-from pysnmp.hlapi import *
+import smtplib, ssl
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 file = open("door_log.txt", "r")
 
@@ -34,25 +36,27 @@ for line in file.readlines():
         door_data[door_name] = [f"Open for {open_time} at {timestamp}"]
 
 
+context = ssl.create_default_context()
+
 # This is where we'd send the message.
-for door in door_data:
-    send_string = f"{door}"
-    for open_data in door_data[door]:
-        send_string += f"\n   - {open_data}"
+with smtplib.SMTP_SSL("smtp.provo.edu", 25, context=context) as server:
+    for door in door_data:
+        send_string = f"{door}"
+        for open_data in door_data[door]:
+            send_string += f"\n   - {open_data}"
 
-    print(send_string)
+        print(send_string)
 
-    # TODO: Change this to run send the correct message to the system.
-    next(sendNotification(
-        SnmpEngine(),
-        CommunityData('public'),
-        UdpTransportTarget(('smtp.provo.edu ', 25)),
-        ContextData(),
-        'trap',
-        # TODO Figure out what the ObjectIdentity is.
-        # In theory, this should just send the log as the send_string above, I just don't know it well enough.
-        [ObjectType(ObjectIdentity('1.3.6.1.2.1.1.1.0'), OctetString(send_string))]
-    ))
+        # TODO: Change this to run send the correct message to the system.
+        message = MIMEMultipart("alternative")
+        message["Subject"] = door
+
+        message_string = MIMEText(send_string, "plain")
+
+        message.attach(message_string)
+
+        server.sendmail("donotreply@provo.edu", "brightonc@provo.edu", message.as_string())
+
 
 # Clear and close the log file.
 file.close()
