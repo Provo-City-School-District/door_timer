@@ -45,21 +45,26 @@ context = ssl.create_default_context()
 
 # This is where we'd send the message.
 with smtplib.SMTP("smtp.provo.edu", 25) as server:
+    send_string = ""
     for door in door_data:
-        send_string = f"{door}"
+        door_string = f"{door}"
         for open_data in door_data[door]:
-            send_string += f"\n   - {open_data}"
+            door_string += f"\n   - {open_data}"
 
-        print(send_string)
+        print(door_string)
 
-        msg = MIMEMultipart('alternative')
-        msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
-        msg['To'] = "door_admin@provo.edu"
-        msg['Subject'] = door
+        send_string += "\n\n" + door_string
 
-        msg.attach(MIMEText(send_string))
+    msg = MIMEMultipart('alternative')
+    msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
+    msg['To'] = "door_admin@provo.edu"
+    msg['Subject'] = f"Doors at {config['location_id']}, {config['location_name']}"
 
-        server.sendmail("donotreply@provo.edu", config["recipients"], msg.as_string())
+    msg.attach(MIMEText(send_string))
+
+    server.sendmail("donotreply@provo.edu", config["recipients"], msg.as_string())
+
+
 
 
 # Clear and close the log file.
