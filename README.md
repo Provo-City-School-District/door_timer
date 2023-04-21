@@ -7,4 +7,8 @@ crontab -e
 
 @reboot /bin/python3 /home/pi/door_timer/door_timer.py
 0 16 * * * /bin/python3 /home/pi/door_timer/door_parser.py
+cd door_timer
+nano config.json
+
+Adjust recipients, adjust location id and location name.
 ```

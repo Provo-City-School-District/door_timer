@@ -43,8 +43,8 @@ try:
                 # Set the total time and format it to look correct.
                 total_time = close_time - door.open_time
 
-                # If the door was open for 180 seconds, we need to log it.
-                if total_time >= 180:
+                # If the door was open for 120 seconds, we need to log it.
+                if total_time >= 120:
                     total_time = "{0:.2f}".format(total_time)
 
                     # Write the data to the file
