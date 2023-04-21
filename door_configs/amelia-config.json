@@ -1,0 +1,67 @@
+{
+  "location_id": 100,
+  "location_name": "Amelia Earhart",
+  "recipients": [
+    "chadd@provo.edu",
+    "charityw@provo.edu",
+    "ryanm@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Doors",
+      "port": 26
+    },
+    {
+      "name": "Front North West Door",
+      "port": 13
+    },
+    {
+      "name": "West Custodial Door",
+      "port": 21
+    },
+    {
+      "name": "Kinder North Door",
+      "port": 27
+    },
+    {
+      "name": "Kinder South Door",
+      "port": 4
+    },
+    {
+      "name": "South West Door",
+      "port": 23
+    },
+    {
+      "name": "South Middle Door",
+      "port": 22
+    },
+    {
+      "name": "South East Door",
+      "port": 12
+    },
+    {
+      "name": "South East Door by Kitchen",
+      "port": 20
+    },
+    {
+      "name": "Kitchen Storage Door",
+      "port": 19
+    },
+    {
+      "name": "Kitchen Door",
+      "port": 25
+    },
+    {
+      "name": "Gym South Door",
+      "port": 6
+    },
+    {
+      "name": "Gym North Door",
+      "port": 5
+    },
+    {
+      "name": "Front Northeast Door",
+      "port": 16
+    }
+  ]
+}

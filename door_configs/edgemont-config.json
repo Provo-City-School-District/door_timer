@@ -1,0 +1,71 @@
+{
+  "location_id": 102,
+  "location_name": "Edgemont",
+  "recipients": [
+    "chadd@provo.edu",
+    "charityw@provo.edu",
+    "harmonyk@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Entrance",
+      "port": 23
+    },
+    {
+      "name": "Main Lobby SO.",
+      "port": 22
+    },
+    {
+      "name": "Main Hall West",
+      "port": 20
+    },
+    {
+      "name": "1 & 2 Grade Door",
+      "port": 19
+    },
+    {
+      "name": "2 & 3 Grade Door",
+      "port": 4
+    },
+    {
+      "name": "Kitchen Door",
+      "port": 27
+    },
+    {
+      "name": "Custodial Door",
+      "port": 21
+    },
+    {
+      "name": "Mechanical Door",
+      "port": 13
+    },
+    {
+      "name": "Mechanical Door",
+      "port": 26
+    },
+    {
+      "name": "Main Hall East Door",
+      "port": 17
+    },
+    {
+      "name": "Library Door",
+      "port": 18
+    },
+    {
+      "name": "Kinder Door",
+      "port": 24
+    },
+    {
+      "name": "Room 100 Door",
+      "port": 25
+    },
+    {
+      "name": "Room 101 Door",
+      "port": 5
+    },
+    {
+      "name": "Cafetorium Door",
+      "port": 16
+    }
+  ]
+}

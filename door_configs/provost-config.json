@@ -1,0 +1,71 @@
+{
+  "location_id": 120,
+  "location_name": "Provost",
+  "recipients": [
+    "chadd@provo.edu",
+    "charityw@provo.edu",
+    "kamia@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Entry Door",
+      "port": 24
+    },
+    {
+      "name": "Kitchen Door",
+      "port": 25
+    },
+    {
+      "name": "V 100 E",
+      "port": 17
+    },
+    {
+      "name": "V 101 F",
+      "port": 18
+    },
+    {
+      "name": "V 100 D",
+      "port": 6
+    },
+    {
+      "name": "V 100 G",
+      "port": 23
+    },
+    {
+      "name": "Custodial Door",
+      "port": 22
+    },
+    {
+      "name": "Mechanical Double",
+      "port": 20
+    },
+    {
+      "name": "Mechanical Single",
+      "port": 19
+    },
+    {
+      "name": "Gym Door",
+      "port": 16
+    },
+    {
+      "name": "Library Door",
+      "port": 23
+    },
+    {
+      "name": "Kindergarten 101",
+      "port": 4
+    },
+    {
+      "name": "Kindergarten 102",
+      "port": 22
+    },
+    {
+      "name": "Vetibule",
+      "port": 27
+    },
+    {
+      "name": "Vestibule",
+      "port": 26
+    }
+  ]
+}

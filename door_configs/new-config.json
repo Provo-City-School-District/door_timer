@@ -1,0 +1,15 @@
+{
+  "location_id": 1896,
+  "location_name": "Auxiliary Services",
+  "recipients": [
+    "chadd@provo.edu",
+    "charityw@provo.edu",
+    "ryanm@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "",
+      "port":
+    }
+  ]
+}
