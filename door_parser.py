@@ -1,10 +1,15 @@
 from datetime import datetime
 
-import smtplib, ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+import smtplib, ssl
+
+import json
+
 file = open("door_log.txt", "r")
+
+config = json.load(open("config.json"))
 
 # Store line number for error logging.
 line_number = -1
@@ -13,7 +18,7 @@ door_data = {}
 
 for line in file.readlines():
     line_number += 1
-    line.replace("\n", '')
+    line = line.replace("\n", '')
     split_line = line.split(',')
 
     try:
@@ -31,9 +36,9 @@ for line in file.readlines():
         continue
 
     if door_name in door_data:
-        door_data[door_name] += [f"Open for {open_time} at {timestamp}"]
+        door_data[door_name] += [f"Open for {open_time} seconds on {timestamp.date()} at {timestamp.time()}"]
     else:
-        door_data[door_name] = [f"Open for {open_time} at {timestamp}"]
+        door_data[door_name] = [f"Open for {open_time} seconds on {timestamp.date()} at {timestamp.time()}"]
 
 
 context = ssl.create_default_context()
@@ -47,12 +52,14 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 
         print(send_string)
 
-        message = """From: Do Not Reply <donotreply@provo.edu>
-        To: Admin <brightonc@provo.edu>
-        Subject: Door Report
-        """ + send_string
+        msg = MIMEMultipart('alternative')
+        msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
+        msg['To'] = "door_admin@provo.edu"
+        msg['Subject'] = door
 
-        server.sendmail("donotreply@provo.edu", ["brightonc@provo.edu"], message)
+        msg.attach(MIMEText(send_string))
+
+        server.sendmail("donotreply@provo.edu", config["recipients"], msg.as_string())
 
 
 # Clear and close the log file.
