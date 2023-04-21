@@ -55,17 +55,15 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 
         send_string += "\n\n" + door_string
 
-    msg = MIMEMultipart('alternative')
-    msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
-    msg['To'] = "door_admin@provo.edu"
-    msg['Subject'] = f"Doors at {config['location_id']}, {config['location_name']}"
+    if send_string != "":
+        msg = MIMEMultipart('alternative')
+        msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
+        msg['To'] = "door_admin@provo.edu"
+        msg['Subject'] = f"Doors at {config['location_id']}, {config['location_name']}"
 
-    msg.attach(MIMEText(send_string))
+        msg.attach(MIMEText(send_string))
 
-    server.sendmail("donotreply@provo.edu", config["recipients"], msg.as_string())
-
-
-
+        server.sendmail("donotreply@provo.edu", config["recipients"], msg.as_string())
 
 # Clear and close the log file.
 file.close()
