@@ -1,0 +1,79 @@
+{
+  "location_id": 118,
+  "location_name": "Lakeview Elementary",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "jamiel@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Door",
+      "port": 17
+    },
+    {
+      "name": "West Hall North",
+      "port": 13
+    },
+    {
+      "name": "Rm 162a",
+      "port": 21
+    },
+    {
+      "name": "Rm 160",
+      "port": 27
+    },
+    {
+      "name": "Rm 156",
+      "port": 4
+    },
+    {
+      "name": "Rm 155",
+      "port": 19
+    },
+    {
+      "name": "West Hall South",
+      "port": 20
+    },
+    {
+      "name": "Mid Hall South",
+      "port": 12
+    },
+    {
+      "name": "East Hall South",
+      "port": 22
+    },
+    {
+      "name": "Rm 125a",
+      "port": 26
+    },
+    {
+      "name": "Rm 126",
+      "port": 23
+    },
+    {
+      "name": "Rm 125",
+      "port": 16
+    },
+    {
+      "name": "Rm 121b",
+      "port": 6
+    },
+    {
+      "name": "Kitchen",
+      "port": 5
+    },
+    {
+      "name": "Gym South",
+      "port": 25
+    },
+    {
+      "name": "Gym North",
+      "port": 24
+    },
+    {
+      "name": "East Hall North",
+      "port": 18
+    }
+  ]
+}

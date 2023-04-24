@@ -1,0 +1,43 @@
+{
+  "location_id": 124,
+  "location_name": "Sunset View IDF",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "chrisc@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Rm 121",
+      "port": 17
+    },
+    {
+      "name": "Rm 122",
+      "port": 18
+    },
+    {
+      "name": "Rm 123",
+      "port": 24
+    },
+    {
+      "name": "Rm 124",
+      "port": 5
+    },
+    {
+      "name": "East Hall North",
+      "port": 23
+    },
+    {
+      "name": "East Hall South",
+      "port": 22
+    },
+    {
+      "name": "North Hall East",
+      "port": 21
+    },
+    {
+      "name": "East Center Hall Door",
+      "port": 27
+    }
+  ]
+}

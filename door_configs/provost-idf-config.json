@@ -1,0 +1,31 @@
+{
+  "location_id": 120,
+  "location_name": "Provost IDF",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "kamia@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Library Door",
+      "port": 23
+    },
+    {
+      "name": "Kindergarten 101",
+      "port": 4
+    },
+    {
+      "name": "Kindergarten 102",
+      "port": 22
+    },
+    {
+      "name": "Vetibule",
+      "port": 27
+    },
+    {
+      "name": "Vestibule",
+      "port": 26
+    }
+  ]
+}

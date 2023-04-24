@@ -1,0 +1,57 @@
+{
+  "location_id": 134,
+  "location_name": "Westridge",
+  "recipients": [
+    "jsong@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Entrance",
+      "port": 19
+    },
+    {
+      "name": "East Hall South",
+      "port": 24
+    },
+    {
+      "name": "Kitchen",
+      "port": 25
+    },
+    {
+      "name": "Gym South",
+      "port": 6
+    },
+    {
+      "name": "Gym North",
+      "port": 16
+    },
+    {
+      "name": "Rm 52a",
+      "port": 23
+    },
+    {
+      "name": "North Hall East",
+      "port": 26
+    },
+    {
+      "name": "East Hall North",
+      "port": 13
+    },
+    {
+      "name": "North Hall Middle",
+      "port": 27
+    },
+    {
+      "name": "North Hall West",
+      "port": 4
+    },
+    {
+      "name": "Kindergarten",
+      "port": 22
+    },
+    {
+      "name": "South Hall West",
+      "port": 20
+    }
+  ]
+}

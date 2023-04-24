@@ -1,0 +1,59 @@
+{
+  "location_id": 128,
+  "location_name": "Timpanogos",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "carrier@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Door",
+      "port": 19
+    },
+    {
+      "name": "Faculty Lounge",
+      "port": 24
+    },
+    {
+      "name": "East Hall North",
+      "port": 13
+    },
+    {
+      "name": "Rm 108",
+      "port": 25
+    },
+    {
+      "name": "Kitchen Storage",
+      "port": 6
+    },
+    {
+      "name": "Kitchen",
+      "port": 16
+    },
+    {
+      "name": "Gym North",
+      "port": 26
+    },
+    {
+      "name": "Gym South",
+      "port": 23
+    },
+    {
+      "name": "South Hall West",
+      "port": 27
+    },
+    {
+      "name": "Rm 117 + 116",
+      "port": 22
+    },
+    {
+      "name": "Rm 116 + 115",
+      "port": 20
+    },
+    {
+      "name": "East Hall South",
+      "port": 4
+    }
+  ]
+}
