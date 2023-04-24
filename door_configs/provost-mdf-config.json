@@ -1,8 +1,8 @@
 {
   "location_id": 120,
-  "location_name": "Provost",
+  "location_name": "Provost MDF",
   "recipients": [
-    "chadd@provo.edu",
+    "jsong@provo.edu",
     "charityw@provo.edu",
     "kamia@provo.edu"
   ],
@@ -46,26 +46,6 @@
     {
       "name": "Gym Door",
       "port": 16
-    },
-    {
-      "name": "Library Door",
-      "port": 23
-    },
-    {
-      "name": "Kindergarten 101",
-      "port": 4
-    },
-    {
-      "name": "Kindergarten 102",
-      "port": 22
-    },
-    {
-      "name": "Vetibule",
-      "port": 27
-    },
-    {
-      "name": "Vestibule",
-      "port": 26
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "location_id": 124,
+  "location_name": "Sunset View Portables",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "chrisc@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Portable 1",
+      "port": 21
+    },
+    {
+      "name": "Portable 2",
+      "port": 19
+    }
+  ]
+}

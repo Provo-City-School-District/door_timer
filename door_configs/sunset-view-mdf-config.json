@@ -1,0 +1,63 @@
+{
+  "location_id": 124,
+  "location_name": "Sunset View MDF",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "chrisc@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Rm 106",
+      "port": 18
+    },
+    {
+      "name": "Rm 107",
+      "port": 17
+    },
+    {
+      "name": "Rm 108",
+      "port": 26
+    },
+    {
+      "name": "Rm 109",
+      "port": 13
+    },
+    {
+      "name": "West Hall North",
+      "port": 21
+    },
+    {
+      "name": "West Hall South",
+      "port": 27
+    },
+    {
+      "name": "West Center Hall",
+      "port": 19
+    },
+    {
+      "name": "North Hall West",
+      "port": 20
+    },
+    {
+      "name": "Mechanical",
+      "port": 12
+    },
+    {
+      "name": "Kitchen",
+      "port": 22
+    },
+    {
+      "name": "Main Lobby",
+      "port": 16
+    },
+    {
+      "name": "West Lobby",
+      "port": 6
+    },
+    {
+      "name": "East Lobby",
+      "port": 5
+    }
+  ]
+}

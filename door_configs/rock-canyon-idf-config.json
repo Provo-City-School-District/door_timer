@@ -1,0 +1,43 @@
+{
+  "location_id": 122,
+  "location_name": "Rock Canyon IDF",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "sethh@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "East Hall North",
+      "port": 20
+    },
+    {
+      "name": "East Hall South",
+      "port": 22
+    },
+    {
+      "name": "North Hall East",
+      "port": 19
+    },
+    {
+      "name": "East Center Hall",
+      "port": 23
+    },
+    {
+      "name": "Rm 121",
+      "port": 21
+    },
+    {
+      "name": "Rm 122",
+      "port": 4
+    },
+    {
+      "name": "Rm 123",
+      "port": 27
+    },
+    {
+      "name": "Rm 124",
+      "port": 13
+    }
+  ]
+}

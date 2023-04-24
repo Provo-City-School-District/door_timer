@@ -1,0 +1,63 @@
+{
+  "location_id": 101,
+  "location_name": "Canyon Crest",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "seane@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Doors",
+      "port": 17
+    },
+    {
+      "name": "South Hall West Door",
+      "port": 13
+    },
+    {
+      "name": "Kitchen Door",
+      "port": 21
+    },
+    {
+      "name": "Gym West",
+      "port": 27
+    },
+    {
+      "name": "Gym East",
+      "port": 20
+    },
+    {
+      "name": "Storage Room",
+      "port": 19
+    },
+    {
+      "name": "Room 27",
+      "port": 22
+    },
+    {
+      "name": "East Hall South",
+      "port": 23
+    },
+    {
+      "name": "South Hall East",
+      "port": 6
+    },
+    {
+      "name": "East Middle Entrance",
+      "port": 16
+    },
+    {
+      "name": "East Hall North",
+      "port": 25
+    },
+    {
+      "name": "Kindergarten Door",
+      "port": 24
+    },
+    {
+      "name": "West Hall North",
+      "port": 18
+    }
+  ]
+}

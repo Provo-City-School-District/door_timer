@@ -1,0 +1,63 @@
+{
+  "location_id": 122,
+  "location_name": "Rock Canyon MDF",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "sethh@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "West Hall North Door",
+      "port": 12
+    },
+    {
+      "name": "West Hall South Door",
+      "port": 22
+    },
+    {
+      "name": "Rm. 106 Door",
+      "port": 27
+    },
+    {
+      "name": "Rm. 107 Door",
+      "port": 4
+    },
+    {
+      "name": "Rm. 108 Door",
+      "port": 18
+    },
+    {
+      "name": "Rm. 109 Door",
+      "port": 17
+    },
+    {
+      "name": "Mechanical Door",
+      "port": 24
+    },
+    {
+      "name": "Kitchen Door",
+      "port": 25
+    },
+    {
+      "name": "North Hall West Door",
+      "port": 6
+    },
+    {
+      "name": "West Center Hall Door",
+      "port": 16
+    },
+    {
+      "name": "Lobby Main Door",
+      "port": 26
+    },
+    {
+      "name": "Lobby West Door",
+      "port": 13
+    },
+    {
+      "name": "Lobby East Door",
+      "port": 19
+    }
+  ]
+}

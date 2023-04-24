@@ -1,0 +1,67 @@
+{
+  "location_id": 104,
+  "location_name": "Franklin Elementary",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "jasonb@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main Entrance",
+      "port": 24
+    },
+    {
+      "name": "East Hall North",
+      "port": 18
+    },
+    {
+      "name": "West Hall North",
+      "port": 25
+    },
+    {
+      "name": "West Hall Middle",
+      "port": 5
+    },
+    {
+      "name": "Rm 135a-IDF",
+      "port": 6
+    },
+    {
+      "name": "South West Hall North",
+      "port": 16
+    },
+    {
+      "name": "South West Hall West",
+      "port": 23
+    },
+    {
+      "name": "Gym West",
+      "port": 22
+    },
+    {
+      "name": "Gym East",
+      "port": 20
+    },
+    {
+      "name": "Rm 191a",
+      "port": 19
+    },
+    {
+      "name": "Kitchen",
+      "port": 4
+    },
+    {
+      "name": "West Hall South",
+      "port": 21
+    },
+    {
+      "name": "Kindergarten",
+      "port": 13
+    },
+    {
+      "name": "East Hall South",
+      "port": 26
+    }
+  ]
+}

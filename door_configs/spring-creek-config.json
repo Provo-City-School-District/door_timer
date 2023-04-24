@@ -1,0 +1,31 @@
+{
+  "location_id": 123,
+  "location_name": "Spring Creek",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "ruthanns@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Kitchen",
+      "port": 23
+    },
+    {
+      "name": "South Gym",
+      "port": 22
+    },
+    {
+      "name": "North Gym",
+      "port": 21
+    },
+    {
+      "name": "Library",
+      "port": 27
+    },
+    {
+      "name": "Library Hall",
+      "port": 6
+    }
+  ]
+}
