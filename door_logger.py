@@ -9,7 +9,7 @@ from lib import date
 
 import RPi.GPIO as GPIO
 
-config = json.load(open("config.json"))
+config = json.load(open("/home/pi/door_timer/config.json"))
 
 # Loads the GPIOs and Enables them.
 gpio_systems = gpio_loader.load_gpios(config)
@@ -18,7 +18,7 @@ file = None
 
 try:
     # Open the log in append mode.
-    file = open("door_log.txt", "a")
+    file = open("/home/pi/door_timer/door_log.txt", "a")
 
     while True:
         for door in gpio_systems:

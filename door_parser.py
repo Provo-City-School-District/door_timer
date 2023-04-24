@@ -7,9 +7,9 @@ import smtplib, ssl
 
 import json
 
-file = open("door_log.txt", "r")
+file = open("/home/pi/door_timer/door_log.txt", "r")
 
-config = json.load(open("config.json"))
+config = json.load(open("/home/pi/door_timer/config.json"))
 
 # Store line number for error logging.
 line_number = -1
@@ -68,4 +68,4 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 # Clear and close the log file.
 file.close()
 
-file = open("door_log.txt", "w").close()
+file = open("/home/pi/door_timer/door_log.txt", "w").close()
