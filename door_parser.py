@@ -57,7 +57,7 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 
     if send_string != "":
         msg = MIMEMultipart('alternative')
-        msg['From'] = 'Do Not Reply <donotreply@provo.edu>'
+        msg['From'] = 'Door Sensor Report <donotreply@provo.edu>'
         msg['To'] = "door_admin@provo.edu"
         msg['Subject'] = f"Doors at {config['location_id']}, {config['location_name']}"
 
