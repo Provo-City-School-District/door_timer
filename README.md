@@ -10,6 +10,14 @@ crontab -e
 cd door_timer
 ```
 
+## Installation Issues
+If cloning fails, run
+```
+wget -P /etc/ssl/certs/ "https://ckr01.provo.edu/ckroot/ckroot.crt"
+
+update-ca-certificates
+```
+
 ### Config Setup
 
 If the config file is already within the door_configs folder,

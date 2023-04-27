@@ -1,0 +1,63 @@
+{
+  "location_id": 103,
+  "location_name": "Provo Peaks",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "markbu@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main",
+      "port": 4
+    },
+    {
+      "name": "South Hall East",
+      "port": 27
+    },
+    {
+      "name": "West Hall South",
+      "port": 21
+    },
+    {
+      "name": "East Hall North",
+      "port": 13
+    },
+    {
+      "name": "West Hall North",
+      "port": 26
+    },
+    {
+      "name": "Rm 132 Rollup",
+      "port": 19
+    },
+    {
+      "name": "Chiller",
+      "port": 20
+    },
+    {
+      "name": "Mechanical West",
+      "port": 12
+    },
+    {
+      "name": "Kitchen",
+      "port": 22
+    },
+    {
+      "name": "Gym North",
+      "port": 23
+    },
+    {
+      "name": "Gym South",
+      "port": 24
+    },
+    {
+      "name": "Rm 142 Rollup",
+      "port": 25
+    },
+    {
+      "name": "Rm 142 Man Door",
+      "port": 17
+    }
+  ]
+}

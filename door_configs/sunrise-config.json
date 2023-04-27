@@ -1,0 +1,23 @@
+{
+  "location_id": 641,
+  "location_name": "Sunrise Doors",
+  "recipients": [
+    "jsong@provo.edu",
+    "charityw@provo.edu",
+    "ondylynw@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Main",
+      "port": 19
+    },
+    {
+      "name": "Sunrise Hall West",
+      "port": 20
+    },
+    {
+      "name": "Sunrise Hall South",
+      "port": 26
+    }
+  ]
+}
