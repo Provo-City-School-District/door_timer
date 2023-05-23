@@ -69,3 +69,5 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 file.close()
 
 file = open("/home/pi/door_timer/door_log.txt", "w").close()
+
+file.close()

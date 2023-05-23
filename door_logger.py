@@ -26,7 +26,7 @@ try:
                 continue
 
             # The Door Was Just Opened
-            if GPIO.input(door.gpio) == 1 and door.closed:
+            if GPIO.input(door.gpio) > 0 and door.closed:
                 door.open_time = time.time()
 
                 time.sleep(0.2)
