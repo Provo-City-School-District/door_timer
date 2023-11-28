@@ -1,0 +1,70 @@
+{
+  "location_id": 404,
+  "location_name": "Centennial Middle School 1",
+  "recipients": [
+    "joshe@provo.edu",
+    "charityw@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "Room 91",
+      "port": 16
+    },
+    {
+      "name": "Room 97",
+      "port": 13
+    },
+    {
+      "name": "East Hallway",
+      "port": 27
+    },
+    {
+      "name": "Auditorium East North",
+      "port": 4
+    },
+    {
+      "name": "Auditorium East South",
+      "port": 19
+    },
+    {
+      "name": "Auditorium South East",
+      "port": 20
+    },
+    {
+      "name": "Auditorium South West",
+      "port": 4
+    },
+    {
+      "name": "Room 92b",
+      "port": 22
+    },
+    {
+      "name": "Room 92b Rollup",
+      "port": 23
+    },
+    {
+      "name": "South Hallway Loading Area",
+      "port": 6
+    },
+    {
+      "name": "Kitchen Backdoor",
+      "port": 5
+    },
+    {
+      "name": "Cafeteria East",
+      "port": 25
+    },
+    {
+      "name": "Cafeteria West",
+      "port": 24
+    },
+    {
+      "name": "South East Hallway Near Main Entrance",
+      "port": 18
+    },
+    {
+      "name": "Main Entrance",
+      "port": 17
+    }
+  ]
+}
