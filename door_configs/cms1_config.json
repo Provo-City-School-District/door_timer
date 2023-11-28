@@ -1,0 +1,67 @@
+{
+  "location_id": 404,
+  "location_name": "Centennial Middle School 1",
+  "recipients": [
+    // "jasong@provo.edu",
+    // "ryanm@provo.edu",
+    "charityw@provo.edu"
+  ],
+  "doors": [
+    {
+      "name": "East Door",
+      "port": 5
+    },
+    {
+      "name": "South Door",
+      "port": 6
+    },
+    {
+      "name": "Portable South",
+      "port": 25
+    },
+    {
+      "name": "Portable North",
+      "port": 24
+    },
+    {
+      "name": "West South Door",
+      "port": 16
+    },
+    {
+      "name": "West North Door",
+      "port": 17
+    },
+    {
+      "name": "Courtyard South East",
+      "port": 4
+    },
+    {
+      "name": "Gym 1 South",
+      "port": 27
+    },
+    {
+      "name": "Gym 1 East",
+      "port": 26
+    },
+    {
+      "name": "Gym 2 East",
+      "port": 13
+    },
+    {
+      "name": "Gym 2 North",
+      "port": 19
+    },
+    {
+      "name": "North West Hallway",
+      "port": 12
+    },
+    {
+      "name": "Room 79",
+      "port": 22
+    },
+    {
+      "name": "North Hallway",
+      "port": 23
+    }
+  ]
+}
