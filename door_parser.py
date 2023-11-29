@@ -70,4 +70,4 @@ file.close()
 
 file = open("/home/pi/door_timer/door_log.txt", "w").close()
 
-file.close()
+#file.close()
