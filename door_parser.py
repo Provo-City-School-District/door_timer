@@ -1,3 +1,4 @@
+from collections import defaultdict
 from datetime import datetime
 
 from email.mime.multipart import MIMEMultipart
@@ -14,7 +15,39 @@ config = json.load(open("/home/pi/door_timer/config.json"))
 # Store line number for error logging.
 line_number = -1
 
-door_data = {}
+door_data = defaultdict(list)
+
+def get_hour_band(timestamp):
+    if 1 <= timestamp.hour < 5:
+        return '1am-5am'
+    elif 5 <= timestamp.hour < 6:
+        return '5am-6am'
+    elif 6 <= timestamp.hour < 7:
+        return '6am-7am'
+    elif 7 <= timestamp.hour < 8:
+        return '7am-8am'
+    elif 8 <= timestamp.hour < 9:
+        return '8am-9am'
+    elif 9 <= timestamp.hour < 10:
+        return '9am-10am'
+    elif 10 <= timestamp.hour < 11:
+        return '10am-11am'
+    elif 11 <= timestamp.hour < 12:
+        return '11am-12pm'
+    elif 12 <= timestamp.hour < 13:
+        return '12pm-1pm'
+    elif 13 <= timestamp.hour < 14:
+        return '1pm-2pm'
+    elif 14 <= timestamp.hour < 15:
+        return '2pm-3pm'
+    elif 15 <= timestamp.hour < 16:
+        return '3pm-4pm'
+    elif 16 <= timestamp.hour < 17:
+        return '4pm-5pm'
+    elif 17 <= timestamp.hour < 24:
+        return '5pm-12pm'
+    else:
+        return '12am-1am'
 
 for line in file.readlines():
     line_number += 1
@@ -35,10 +68,8 @@ for line in file.readlines():
         print(f"Error: Line {line_number} is formatted incorrectly")
         continue
 
-    if door_name in door_data:
-        door_data[door_name] += [f"Open for {open_time} seconds on {timestamp.date()} at {timestamp.time()}"]
-    else:
-        door_data[door_name] = [f"Open for {open_time} seconds on {timestamp.date()} at {timestamp.time()}"]
+    hour_band = get_hour_band(timestamp)
+    door_data[door_name].append({"timestamp": timestamp, "open_time": open_time, "hour_band": hour_band})
 
 
 context = ssl.create_default_context()
@@ -48,9 +79,20 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
     send_string = ""
     for door in door_data:
         door_string = f"{door}"
-        for open_data in door_data[door]:
-            door_string += f"\n   - {open_data}"
+        sorted_data = sorted(door_data[door], key=lambda x: x['timestamp'])
+        grouped_data = defaultdict(list)
+        for data in sorted_data:
+            grouped_data[data['hour_band']].append(data)
 
+        for hour_band in grouped_data:
+            door_string += f"\n\t{hour_band}"
+            for data in grouped_data[hour_band]:
+                hours, remainder = divmod(data['open_time'], 3600)
+                minutes, seconds = divmod(remainder, 60)
+                if hours > 0:
+                    door_string += f"\n\t   - Open for {int(hours)} hours, {int(minutes)} minutes, and {int(seconds)} seconds on {data['timestamp'].strftime('%Y-%m-%d %H:%M:%S')}"
+                else:
+                    door_string += f"\n\t   - Open for {int(minutes)} minutes, and {int(seconds)} seconds on {data['timestamp'].strftime('%Y-%m-%d %H:%M:%S')}"
         print(door_string)
 
         send_string += "\n\n" + door_string
@@ -69,5 +111,3 @@ with smtplib.SMTP("smtp.provo.edu", 25) as server:
 file.close()
 
 file = open("/home/pi/door_timer/door_log.txt", "w").close()
-
-#file.close()
